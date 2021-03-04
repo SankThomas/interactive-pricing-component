@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <!-- Light blue background pattern -->
+    <div class="bg-pattern">
+      <img src="./images/bg-pattern.svg" alt="" class="bg-pattern-img" />
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+      <div class="header">
+        <img src="./images/pattern-circles.svg" alt="" class="bg-circles" />
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial.</p>
+        <p>No credit card required.</p>
+      </div>
+
+      <div class="container-inner">
+        <div>
+          <div class="title">
+            <h4>100K Pageviews</h4>
+            <p class="price">
+              <span>$16.00</span>
+              &nbsp;&nbsp;&nbsp;/month
+            </p>
+          </div>
+
+          <form class="form">
+            <input
+              type="range"
+              name="range-slider"
+              id="range-slider"
+              min="0"
+              max="10"
+              value="5"
+            />
+            <!-- <img
+              src="./images/icon-slider.svg"
+              alt=""
+              class="slider-icon"
+              draggable="true"
+            /> -->
+          </form>
+
+          <p class="price">
+            <span>$16.00</span>
+            &nbsp;&nbsp;&nbsp;/month
+          </p>
+        </div>
+
+        <div class="toggle">
+          <label class="name">Monthly Billing</label>
+          <input type="checkbox" class="checkbox" id="checkbox" />
+
+          <label for="checkbox" class="label">
+            <div class="ball"></div>
+          </label>
+
+          <label class="name">
+            Yearly Billing
+            <span>-25%</span>
+          </label>
+        </div>
+
+        <div class="list">
+          <ul>
+            <li>
+              <img src="./images/icon-check.svg" alt="check icon" />
+              Unlimited websites
+            </li>
+            <li>
+              <img src="./images/icon-check.svg" alt="check icon" />
+              100% data ownership
+            </li>
+            <li>
+              <img src="./images/icon-check.svg" alt="check icon" />
+              Email reports
+            </li>
+          </ul>
+          <p>
+            <button class="btn">Start my trial</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://tsbsankara.co.ke">Thomas Sankara</a>
+      .
+    </div>
+  </body>
+</html>

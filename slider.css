@@ -1,0 +1,155 @@
+/* Toggle */
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 40px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  position: relative;
+  background-color: hsl(223, 50%, 87%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 5px;
+  margin: 0 10px;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.label:active {
+  background-color: hsl(174, 86%, 45%);
+}
+
+.name {
+  font-size: 14px;
+  color: hsl(234, 14%, 74%);
+}
+
+.name span {
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(14, 92%, 95%);
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 30px;
+}
+
+.ball {
+  background: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.15s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+/* End of toggle */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: hsl(174, 86%, 45%);
+  border-radius: 30px;
+  border: 2px solid hsl(174, 86%, 45%);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px hsl(174, 86%, 45%), 0px 0px 1px hsl(174, 86%, 45%);
+  border: 1px solid hsl(174, 86%, 45%);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: hsl(174, 86%, 45%);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: hsl(174, 86%, 45%);
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px hsl(174, 86%, 45%), 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid hsl(174, 86%, 45%);
+}
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px hsl(174, 86%, 45%), 0px 0px 1px #0d0d0d;
+  border: 1px solid hsl(174, 86%, 45%);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: hsl(174, 86%, 45%);
+  border: 0.2px solid hsl(174, 86%, 45%);
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px hsl(174, 86%, 45%), 0px 0px 1px hsl(174, 86%, 45%);
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid hsl(174, 86%, 45%);
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px hsl(174, 86%, 45%), 0px 0px 1px #0d0d0d;
+}
+
+input[type="range"]::-ms-thumb {
+  box-shadow: 1px 1px 1px hsl(174, 86%, 45%), 0px 0px 1px #0d0d0d;
+  border: 1px solid hsl(174, 86%, 45%);
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: hsl(174, 86%, 45%);
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+  background: hsl(174, 86%, 45%);
+}
